@@ -10,7 +10,7 @@ class SheepfoldModel extends Model{
 
     protected $primaryKey ="id";
 //Fields form the table
-    protected $allowedFields = array("id", "name", "adress", "postCode", "town", "phoneNumber", "siret", "rcs", "numTVA", "capital", "isActive");
+    protected $allowedFields = array("id", "name", "adress", "postCode", "town", "phoneNumber", "siret", "rcs", "numTVA", "capital", "isActive", "propertyOwnerName", "propertyOwnerFirstName");
 
 //We give some french names for the fields 
     protected $fieldsFullNames = array ( "id" => "id",
@@ -23,7 +23,10 @@ class SheepfoldModel extends Model{
                                      "rcs" => "RCS",
                                      "numTVA" => "Numéro de TVA intracommunautaire",
                                      "capital" => "Capital",
-                                     "isActive" => "Actif");
+                                     "isActive" => "Actif",
+                                     "propertyOwnerName" => "Nom du propriétaire",
+                                     "propertyOwnerFirstName" => "Prénom du propriétaire"
+                                    );
 
  //The fields's types 
     protected $fieldsTypes = array ("id" => "number",
@@ -36,5 +39,7 @@ class SheepfoldModel extends Model{
                                     "rcs" => "text",
                                     "numTVA" => "text",
                                     "capital" => "number",
-                                    "isActive" => "radio");
+                                    "isActive" => "radio",
+                                    "propertyOwnerName" => "text",
+                                    "propertyOwnerFirstName" => "text");
 }

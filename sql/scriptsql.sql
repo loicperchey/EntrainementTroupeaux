@@ -12,3 +12,7 @@ CREATE TABLE IF NOT EXISTS sheepfold (
     isActive boolean NULL,
     PRIMARY KEY (id)
 );
+
+ALTER TABLE sheepfold 
+    ADD propertyOwnerName varchar(128),
+    ADD propertyOwnerFirstName varchar(128);
