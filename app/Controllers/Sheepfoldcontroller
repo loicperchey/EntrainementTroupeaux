@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 
 class Sheepfoldcontroller extends Objectcontroller{
+    
     public $model;
     public string $title;
     public string $table;

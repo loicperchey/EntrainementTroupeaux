@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\SheepfoldModel;
 use CodeIgniter\Model;
 
 class Objectcontroller extends BaseController{
