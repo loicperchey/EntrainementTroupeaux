@@ -1,0 +1,24 @@
+<h2><?= esc($sheepfoldtitle) ?></h2>
+
+<table>
+    <thread>
+    <tr>
+    </tr> 
+    </thread>
+
+<?php if (!empty($sheepfold) && is_array($sheepfold)) { 
+    foreach ($sheepfold as $sheepfold_item) { ?>
+        <tr>
+            <?php foreach($fields as $field){ ?>
+                <td><?= esc($sheepfold_item[$field]) ?></td>
+            <?php } ?>
+        </tr>
+       </table>
+
+    <?php } ?>
+
+<?php } else { ?>
+
+    <h3>Aucune bergerie</h3>
+
+<?php } ?>
