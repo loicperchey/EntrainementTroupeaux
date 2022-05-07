@@ -1,0 +1,14 @@
+<?php
+
+use CodeIgniter\Model;
+
+class SheepfoldModel extends Model{
+//initialisation for the table and her informations
+    protected $table = "sheepfold";
+
+    protected $primaryKey ="id";
+
+    protected $allowedFields = array("id", "name", "adress", "postCode", "town", "phoneNumber", "siret", "rcs", "numTVA", "capital", "isActive")
+}
+
+?>
