@@ -12,7 +12,7 @@ class Sheepfoldcontroller extends Objectcontroller{
     public function __construct()
     {
         $this->title = "Bergerie";
-        $this->model = model("SheepfoldModel");
+        $this->model = model("Sheepfoldmodel");
         $this->tableElement = $this->model->table;
     }
 
